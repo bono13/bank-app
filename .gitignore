@@ -1,3 +1,5 @@
 #PACKAGES#
 ##########
+config
+sandbox
 *node_modules/
