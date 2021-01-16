@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const express = require('express');
 //ROUTES
 const accountRoutes = require('./routes/account');
+const indexRoute = require('./routes/index');
 
 //ENVIRONMENT VARIABLES
 const port = process.env.PORT;
@@ -21,7 +22,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-app.use('/account', accountRoutes);
+app.use(indexRoute);
+app.use(accountRoutes);
 
 // npm run dev
 app.listen(port, () => {

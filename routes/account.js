@@ -5,12 +5,12 @@ const router = new express.Router();
 
 router.get('/my_funds', accountControllers.getFunds);
 
-router.get('/create_account', accountControllers.getOpenAccount);
+router.get('/create_account', accountControllers.getCreateAccount);
 
 router.get('/close_account', accountControllers.getCloseAccount);
 
-router.get('/insert_funds', accountControllers.getInsertFunds);
+router.get('/deposit', accountControllers.getDeposit);
 
-router.get('/withdraw_funds', accountControllers.getWithdrawFunds);
+router.get('/withdraw', accountControllers.getWithdraw);
 
 module.exports = router;

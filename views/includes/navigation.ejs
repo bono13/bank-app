@@ -1,0 +1,30 @@
+<header class="main-header">
+	<nav class="main-header__nav">
+		<ul class="main-header__item-list">
+			<!-- index -->
+			<li class="main-header__item">
+				<a class="<%= path === '/' ? 'active' : '' %>" href="/"> Home </a>
+			</li>
+			<!--account routes  -->
+			<li class="main-header__item">
+				<a class="<%= path === '/my_funds' ? 'active' : '' %>" href="/my_funds"> Funds </a>
+			</li>
+			<li class="main-header__item">
+				<a class="<%= path === '/create_account' ? 'active' : '' %>" href="/create_account">
+					Create Account
+				</a>
+			</li>
+			<li class="main-header__item">
+				<a class="<%= path === '/close_account' ? 'active' : '' %>" href="/close_account">
+					Close Account
+				</a>
+			</li>
+			<li class="main-header__item">
+				<a class="<%= path === '/deposit' ? 'active' : '' %>" href="/deposit"> Deposit </a>
+			</li>
+			<li class="main-header__item">
+				<a class="<%= path === '/withdraw' ? 'active' : '' %>" href="/withdraw"> Withdraw </a>
+			</li>
+		</ul>
+	</nav>
+</header>
