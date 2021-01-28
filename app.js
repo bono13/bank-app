@@ -2,9 +2,12 @@ const express = require('express');
 
 const app = express();
 
-app.listen(3002);
+const port = process.env.PORT || 3000;
 
-//Edwin was here ))
-//And so was Jakub!
+app.get('/', (req, res) => {
+	res.json('Sanity check...');
+});
 
-// edwin will ask for a pull request
+app.listen(port, () => {
+	console.log(`Server up on port ${port}`);
+});

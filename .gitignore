@@ -1,3 +1,7 @@
 #PACKAGES#
 ##########
 *node_modules/
+
+#ENV CONFIG#
+############
+*config/
