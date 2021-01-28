@@ -8,7 +8,7 @@ exports.getIndex = (req, res) => {
 	}
 };
 
-exports.getUser = async (req, res) => {
+exports.getAddUser = async (req, res) => {
 	try {
 		const user = await User.find({});
 

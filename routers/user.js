@@ -6,7 +6,7 @@ const router = new express.Router();
 //INDEX
 router.get('/', userController.getIndex);
 // GET users
-router.get('/user', userController.getUser);
+router.get('/user', userController.getAddUser);
 //POST users
 router.post('/user', userController.postAddUser);
 
